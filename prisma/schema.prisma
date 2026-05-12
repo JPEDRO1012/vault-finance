@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String        @id @default(cuid())
+  name         String
+  email        String        @unique
+  password     String?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  transactions Transaction[]
+  investments  Investment[]
+  goals        Goal[]
+}
+
+model Transaction {
+  id        String   @id @default(cuid())
+  title     String
+  amount    Float
+  category  String
+  type      String
+  date      DateTime
+
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Investment {
+  id             String   @id @default(cuid())
+  name           String
+  type           String
+  amount         Float
+  profitability  Float
+  monthlyReturn  Float
+  risk           String
+  date           DateTime
+
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model Goal {
+  id        String   @id @default(cuid())
+  title     String
+  target    Float
+  current   Float
+  deadline  String
+
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
