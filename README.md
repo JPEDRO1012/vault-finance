@@ -1,36 +1,171 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vault Finance
+
+Modern full-stack financial management platform inspired by real fintech products like Nubank, XP Investimentos and banking dashboards.
+
+## Overview
+
+Vault Finance is a complete financial management system focused on:
+
+* transaction control
+* investment tracking
+* financial goals
+* intelligent insights
+* real-time analytics
+* PDF reports
+
+The platform was built with a modern full-stack architecture using Next.js, Prisma and MySQL.
+
+---
+
+## Main Features
+
+### Authentication System
+
+* Secure login and registration
+* JWT authentication
+* Protected routes
+* Persistent user session
+
+### Financial Transactions
+
+* Create transactions
+* Edit transactions
+* Delete transactions
+* Income and expense management
+* Dynamic filtering system
+* Financial summaries
+
+### Investments
+
+* Real investment portfolio
+* Patrimony evolution charts
+* Investment performance
+* Risk classification
+* Investment CRUD
+
+### Financial Goals
+
+* Goal creation and tracking
+* Dynamic progress system
+* Financial target management
+* Real progress indicators
+
+### Intelligent Financial Insights
+
+* Automatic risk profile detection
+* Savings rate analysis
+* Smart financial insights
+* Investment behavior analysis
+* Dynamic user profile
+
+### Reports & Analytics
+
+* Real-time charts
+* Monthly comparisons
+* Category analysis
+* PDF export system
+* Dynamic dashboards
+
+---
+
+## Technologies Used
+
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Recharts
+* Lucide React
+
+### Backend
+
+* Next.js API Routes
+* Prisma ORM
+* MySQL
+* JWT Authentication
+
+### Additional Tools
+
+* html2canvas
+* jsPDF
+* Zustand
+* Sonner
+
+---
+
+## Project Architecture
+
+```bash
+src/
+├── app/
+├── components/
+├── hooks/
+├── lib/
+├── store/
+├── types/
+├── data/
+└── api/
+```
+
+---
+
+## Features Highlights
+
+* Full CRUD system
+* Real database integration
+* Dynamic charts
+* PDF report export
+* Smart financial profile system
+* Responsive fintech-inspired UI
+* Modern dashboard experience
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/JPEDRO1012/vault-finance.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Future Improvements
 
-To learn more about Next.js, take a look at the following resources:
+* Open Finance integration
+* AI financial assistant
+* Advanced notifications
+* Investment recommendations
+* Mobile responsiveness improvements
+* Cloud deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
+João Pedro
+Software Developer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GitHub:
+https://github.com/JPEDRO1012
